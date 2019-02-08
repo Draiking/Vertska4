@@ -10,17 +10,18 @@ body {
 }
 
 .button {
-  color: $black;
-  background-color: $accent-yellow;
-  border-radius: 2px;
+  color: $white;
+  background-color: $black-button;
   font-size: 15px;
   padding: 10px 22px;
   transition: background-color .25s ease;
   &:hover {
-    background-color: lighten($accent-yellow, 12%);
+    color: $white;
+    text-decoration: none;
+    background-color: lighten($black-button, 12%);
   }
   &:active {
-    background-color: darken($accent-yellow, 10%);
+    background-color: lighten($black-button, 10%);
   }
 }
 
