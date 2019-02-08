@@ -5,6 +5,7 @@
   background-position: center;
   position: relative;
   color: $white;
+  font-family: "MuseoSansCyrl-100", sans-serif;
 
   .top-line {
     height: 100px;
@@ -72,6 +73,8 @@
     font-size: 15px;
     padding-left: 50px;
     padding-top: 40px;
+    font-family: "MuseoSansCyrl-300", sans-serif;
+    font-size: 16px;
     li {
       list-style-type: none;
       display: inline-block;
@@ -161,6 +164,7 @@
     position: absolute;
     top: 235px;
     left: 0;
+    font-family: "MuseoSansCyrl-100", sans-serif;
     .button{
       position: relative;
       background-image: url(../../img/box-button.png);
@@ -194,6 +198,16 @@
   .adventure-right {
     margin-top: 20px;
     margin-left: 50px;
+
+    h4 {
+      font-family: "MuseoSansCyrl-700", sans-serif;
+      color: $white1;
+      font-size: 35px;
+    }
+    p{
+      font-family: "MuseoSansCyrl-100", sans-serif;
+      color: $gray-10;
+    }
   }
 
   .price-top {

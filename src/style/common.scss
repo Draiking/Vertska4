@@ -5,7 +5,7 @@ body {
   min-width: 320px;
   position: relative;
   line-height: 1.5;
-  font-family: "RobotoRegular", sans-serif;
+  font-family: "MuseoSansCyrl-100", sans-serif;
   overflow-x: hidden;
 }
 
@@ -15,6 +15,7 @@ body {
   font-size: 15px;
   padding: 12px 12px;
   transition: background-color .25s ease;
+  font-family: "MuseoSansCyrl-700", sans-serif;
   &:hover {
     color: $white;
     text-decoration: none;
