@@ -15,7 +15,6 @@
     font-size: 15px;
     padding-left: 50px;
     padding-top: 10px;
-
     li {
       list-style-type: none;
       display: inline-block;
@@ -32,4 +31,65 @@
     }
     }
   }
+
+  .toggle-menu {
+    display: block;
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center;
+    line-height: 48px;
+    width: 28px;
+    height: 28px;
+    margin: 22px auto 0;
+    span {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: $gray;
+      transition: all 0.3s;
+      backface-visibility: hidden;
+      border-radius: 2px;
+      &:after {
+        top: 9px;
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: $gray;
+        transition: all 0.3s;
+        backface-visibility: hidden;
+        border-radius: 2px;
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: -9px;
+        width: 100%;
+        height: 3px;
+        background-color: $gray;
+        transition: all 0.3s;
+        backface-visibility: hidden;
+        border-radius: 2px;
+      }
+    }
+    &.on {
+      span {
+        background-color: transparent;
+        &:before {
+          transform: rotate(45deg) translate(5px, 5px);
+        }
+        &:after {
+          transform: rotate(-45deg) translate(7px, -8px);
+        }
+      }
+    }
+  }
+
+
+
 }
