@@ -154,6 +154,17 @@
     margin-top: 50px;
   }
 
+  .adventure-text {
+    position: relative;
+    top: 44px;
+    left: 0;
+    clip-path: polygon(0% 0%, 100% 2%, 100% 50%, 89% 100%, 0% 100%);    }
+    h1 {
+      font-family: "MuseoSansCyrl-700", sans-serif;
+      font-size: 53px;
+      clip-path: polygon(0% 0%, 64% 15%, 60% 78%, 48% 100%, 0% 100%);
+  }
+
   .adventure-img {
     position: absolute;
     top: 44px;
