@@ -409,15 +409,35 @@
       margin-left: 0;
       position: relative;
       margin-right: 130px;
-
+      p{
+        color: $white;
+      }
+      h4{
+        color: $white;
+      }
     }
-
-
-
-
   }
 }
 
+@media only screen and (max-width : 444px) {
+  .home {
+    .order-first {
+      order: 1;
+    }
+
+    .price-top {
+      margin: 0;
+    }
+
+    .price-bottom {
+      margin: 0;
+    }
+
+    .adventure-button {
+      top: 0;
+    }
+  }
+}
 
 
 
