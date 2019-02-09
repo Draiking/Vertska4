@@ -158,11 +158,15 @@
     position: relative;
     top: 44px;
     left: 0;
-    clip-path: polygon(0% 0%, 100% 2%, 100% 50%, 89% 100%, 0% 100%);    }
+
+  }
     h1 {
       font-family: "MuseoSansCyrl-700", sans-serif;
       font-size: 53px;
       clip-path: polygon(0% 0%, 64% 15%, 60% 78%, 48% 100%, 0% 100%);
+      &:nth-child(2) {
+        color: red;
+      }
   }
 
   .adventure-img {
@@ -286,7 +290,40 @@
 
 
 }
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width : 1200px) {
+  .home {
+    .main-menu {
+      font-size: 14px;
+    }
+
+    .logo {
+      width: 250px;
+    }
+
+    .adventure-text {
+      h1 {
+        clip-path: polygon(0% 0%, 73% 0%, 65% 99%, 0% 100%, 0% 100%);
+        font-size: 42px;
+      }
+    }
+
+    .linear-button {
+      width: 407px;
+      right: -77px;
+      top: -8px;
+    }
+
+    .adventure-right {
+      margin-top: 20px;
+      margin-left: 50px;
+      position: relative;
+      left: 70px;
+    }
+
+  }
+}
+
+@media only screen and (max-width : 991px) {
   .home {
     .main-menu {
       display: none;
@@ -321,9 +358,51 @@
         }
       }
     }
+
+    .logo {
+      width: 250px;
+      height: 70px;
+    }
+
+    .top-line {
+      height: 70px;
+      .angle.top-left::before {
+        height: 61px;
+      }
+      .angle.top-right::before {
+        height: 61px;
+      }
+    }
+
+    .toggle-menu {
+      top: 13px;
+    }
+
+    .adventure-text {
+      h1 {
+        clip-path: polygon(0% 0%, 64.03% -2.6%, 55.76% 99.00%, 0% 100%, 0% 100%);
+        font-size: 32px;
+      }
+    }
+
+    .adventure-button {
+      top: 335px;
+      .button{
+        z-index: 1000;
+        .angle.top-right {
+          right: 4px;
+        }
+      }
+    }
+
+    .linear-button {
+      right: 0;
+      top: -20px;
+      width: 363px;
+    }
+
+
   }
-
-
 }
 
 @import "../../style/media";
