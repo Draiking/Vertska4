@@ -6,14 +6,15 @@
   position: relative;
   color: $white;
   font-family: "MuseoSansCyrl-100", sans-serif;
-
+// лицевой фон
+// гралиент линия
   .top-line {
     height: 100px;
     background-image: url(../../img/gradient.png);
     border-bottom: $gray 1px solid;
   }
 
-  .logo {
+  .logo { // логотип
     background-image: url(../../img/logo.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -21,7 +22,7 @@
     position: relative;
     width: 315px;
     height: 100px;
-    .angle {
+    .angle { // углы
       display: inline-block;
       position: absolute;
       width: 7px;
@@ -69,7 +70,7 @@
     }
   }
 
-  .main-menu {
+  .main-menu { // меню(пк)
     font-size: 15px;
     padding-left: 50px;
     padding-top: 40px;
@@ -92,7 +93,7 @@
     }
   }
 
-  .toggle-menu {
+  .toggle-menu {// меню(small)
     display: block;
     float: right;
     position: absolute;
@@ -154,18 +155,18 @@
     margin-top: 50px;
   }
 
-  .adventure-img {
+  .adventure-img {// картинка
     position: absolute;
     top: 44px;
     left: 0;
   }
 
-  .adventure-button {
+  .adventure-button {//кнопка
     position: absolute;
     top: 235px;
     left: 0;
     font-family: "MuseoSansCyrl-100", sans-serif;
-    .button {
+    .button {// градиент кнопки
       position: relative;
       background-image: url(../../img/box-button.png);
     }
@@ -188,7 +189,7 @@
     }
   }
 
-  .linear-button {
+  .linear-button {// указатель на ракету(картинка)
     position: relative;
     top: 20px;
     right: -20px;
@@ -209,7 +210,7 @@
       color: $gray-10;
     }
   }
-
+  // предложения компании
   .price-top {
     display: block;
     width: 100%;
@@ -379,7 +380,6 @@
       top: -20px;
       width: 363px;
     }
-
   }
 }
 
@@ -397,11 +397,9 @@
       position: relative;
       top: 100px;
       text-align: center;
-
       .order-sm-first {
         order: -1;
       }
-
     }
 
     .adventure-right {
@@ -438,8 +436,5 @@
     }
   }
 }
-
-
-
 
 @import "../../style/media";
